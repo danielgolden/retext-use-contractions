@@ -1,5 +1,6 @@
 import { visit } from 'unist-util-visit';
 import { is, convert } from 'unist-util-is';
+import { pointStart, pointEnd } from 'unist-util-position'
 import { contractions } from './contractions-list.js'
 import { toString } from 'nlcst-to-string'
 
@@ -44,10 +45,11 @@ export default function retextUseContractions() {
               
               if (matches) {
                 const actual = toString(children[index - 1]) + toString(sentenceChild) + toString(children[index + 1])
+                console.log(children[index]);
                 Object.assign(
                   file.message(
                     `Expected "${expected}" not "${actual}"`,
-                    children[index - 1],
+                    {start: pointStart(children[index - 1]), end: pointEnd(children[index + 1])},
                     [source, ruleId].join(':')
                   ),
                   {actual, expected, note: '', url: 'https://one-core.datanerd.us/foundation/design/writing/contractions/'}
