@@ -34,8 +34,8 @@ export const contractions = [
     id: 'could-not',
     type: 'basic',
     contraction: {
-      straight: `could'nt`,
-      curly: `could’nt`,
+      straight: `couldn't`,
+      curly: `couldn’t`,
     },
     expanded: ['could not'],
   },
@@ -43,8 +43,8 @@ export const contractions = [
     id: 'did-not',
     type: 'basic',
     contraction: {
-      straight: `did'nt`,
-      curly: `did’nt`,
+      straight: `didn't`,
+      curly: `didn’t`,
     },
     expanded: ['did not'],
   },
@@ -52,8 +52,8 @@ export const contractions = [
     id: 'does-not',
     type: 'basic',
     contraction: {
-      straight: `does'nt`,
-      curly: `does’nt`,
+      straight: `doesn't`,
+      curly: `doesn’t`,
     },
     expanded: ['does not'],
   },
@@ -61,8 +61,8 @@ export const contractions = [
     id: 'do-not',
     type: 'basic',
     contraction: {
-      straight: `do'nt`,
-      curly: `do’nt`,
+      straight: `don't`,
+      curly: `don’t`,
     },
     expanded: ['do not'],
   },
