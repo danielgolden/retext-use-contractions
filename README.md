@@ -12,16 +12,13 @@ npm install retext-use-contractions
 
 ```js
 import { retext } from "retext";
-import { reporter } from "vfile-reporter";
-import retextStringify from "retext-stringify";
 import retextUseContractions from "retext-use-contractions";
 
 retext()
   .use(retextUseContractions)
-  .use(retextStringify)
-  .process("These are not the droids you are looking for")
+  .process("I can not see you.")
   .then((report) => {
-    console.error(reporter(file));
+    console.error(report);
   });
 ```
 

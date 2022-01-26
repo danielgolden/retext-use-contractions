@@ -1,6 +1,5 @@
 import fs from 'fs'
 import {retext} from 'retext'
-// import {reporter} from 'vfile-reporter-json'
 import retextUseContractions from './index.js'
 
 retext()
