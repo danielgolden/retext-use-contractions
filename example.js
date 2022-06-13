@@ -4,7 +4,7 @@ import retextUseContractions from './index.js'
 
 retext()
   .use(retextUseContractions)
-  .process('I can not see you.')
+  .process(`We are certainly correct.`)
   .then((text) => {
-    console.error(text.messages[0].position)
+    console.error(text)
   })

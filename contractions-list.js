@@ -222,15 +222,15 @@ export const contractions = [
       'it is',
     ],
   },
-  {
-    id: 'let-us',
-    type: 'basic',
-    contraction: {
-      straight: `let's`,
-      curly: `let’s`,
-    },
-    expanded: ['let us'],
-  },
+  // {
+  //   id: 'let-us',
+  //   type: 'basic',
+  //   contraction: {
+  //     straight: `let's`,
+  //     curly: `let’s`,
+  //   },
+  //   expanded: ['let us'],
+  // },
   {
     id: 'might-have',
     type: 'basic',
@@ -448,7 +448,6 @@ export const contractions = [
     },
     expanded: [
       'what is', 
-      'what does'
     ],
   },
   {
