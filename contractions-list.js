@@ -184,15 +184,6 @@ export const contractions = [
     expanded: ['I am'],
   },
   {
-    id: 'i-have',
-    type: 'basic',
-    contraction: {
-      straight: `I've`,
-      curly: `I’ve`,
-    },
-    expanded: ['I have'],
-  },
-  {
     id: 'is-not',
     type: 'basic',
     contraction: {
